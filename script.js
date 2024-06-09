@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const users = [
-        { id: 1, username: 'adminUser', email: 'admin@piworks.net', enabled: true },
-        { id: 2, username: 'testUser', email: 'testuser@piworks.net', enabled: true }
+        { id: 1, username: 'AdminUser', email: 'admin@piworks.net', enabled: true },
+        { id: 2, username: 'Test User', email: 'testuser@piworks.net', enabled: true }
     ];
 
     const userTableBody = document.querySelector('#userTable tbody');
