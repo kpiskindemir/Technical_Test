@@ -8,17 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>User Management</h1>
-        <button id="newUserButton">New User</button>
-        <label>
-            <input type="checkbox" id="hideDisabledUser">
-            Hide Disabled Users
-        </label>
+        <div class="header">
+            <button id="newUserButton">+ New User</button>
+            <label>
+                <input type="checkbox" id="hideDisabledUser">
+                Hide Disabled User
+            </label>
+        </div>
         <table id="userTable">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Username</th>
+                    <th>User Name</th>
                     <th>Email</th>
                     <th>Enabled</th>
                 </tr>
@@ -27,9 +28,6 @@
                 <!-- User rows will be added here dynamically -->
             </tbody>
         </table>
-        <div id="pagination">
-            <!-- Pagination controls will be added here dynamically -->
-        </div>
         <div id="newUserForm" class="hidden">
             <h2>New User</h2>
             <form id="userForm">
