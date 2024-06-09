@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <button id="newUserButton">New User</button>
+        <label>
+            <input type="checkbox" id="hideDisabledUser">
+            Hide Disabled Users
+        </label>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Enabled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <div id="pagination">
+            <!-- Pagination controls will be added here dynamically -->
+        </div>
+        <div id="newUserForm" class="hidden">
+            <h2>New User</h2>
+            <form id="userForm">
+                <label>
+                    Username:
+                    <input type="text" id="username" required>
+                </label>
+                <label>
+                    Display Name:
+                    <input type="text" id="displayName" required>
+                </label>
+                <label>
+                    Phone:
+                    <input type="text" id="phone">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="email" required>
+                </label>
+                <label>
+                    User Roles:
+                    <select id="userRoles" required>
+                        <option value="Guest">Guest</option>
+                        <option value="Admin">Admin</option>
+                        <option value="SuperAdmin">SuperAdmin</option>
+                    </select>
+                </label>
+                <label>
+                    Enabled:
+                    <input type="checkbox" id="enabled" checked>
+                </label>
+                <button type="submit">Save User</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
